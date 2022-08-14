@@ -18,9 +18,9 @@ public class CardatabaseApplication {
     private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
 
     /*
-    Ici je peux faire une injection meme si je n'ai pas défini encore une implemntation de l'interface, puisque dans
+    Ici je peux faire une injection meme si je n'ai pas encore défini une implemntation de l'interface, puisque dans
     tout le projet il y a un seul Bean qui implemente l'interface #CrudRepository#, c est la calss #SimpleJpaRepository#
-    qui fait partie du starter #spring-boot-starter-data-jpa# qui sera disponible
+    qui fait partie du starter #spring-boot-starter-data-jpa# qui sera disponible dans le classpath container Spring
      */
     @Autowired
     private CarRepository repository;
